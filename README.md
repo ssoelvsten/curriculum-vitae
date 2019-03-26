@@ -1,5 +1,3 @@
 # Curriculum Vitae
-A collection of maintained and up to date Curriculum Vitae (CVs) about me, Steffan Sølvsten.
-
-These are based on the preamble and `sample.tex` found at
-https://github.com/liantze/AltaCV
+A collection of Curriculum Vitae (CVs) about me. To compile any of them, please
+include `altacv.cls` in the root folder from https://github.com/liantze/AltaCV .
