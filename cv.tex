@@ -1,0 +1,71 @@
+\input{preamble}
+
+\begin{document}
+\input{sections/header.tex}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+\begin{fullwidth}
+  Ambitious, versatile and hard-working computer scientists and full stack
+  developer with a deeper interest for \emph{algorithms}, \emph{complexity
+    theory}, and \emph{logic and semantics}.
+\end{fullwidth}
+
+
+% ----------------------------------------
+% Side bar
+% ----------------------------------------
+\marginpar{
+  \input{sections/skills.tex}
+
+
+  \cvsection{Education}
+  
+  \input{education/au_bsc.tex}
+
+  
+  \cvsection{Languages}
+  
+  \input{languages/english.tex}
+
+  \divider
+
+  \input{languages/danish.tex}
+
+  \divider
+
+  \input{languages/german.tex}
+}
+
+% ----------------------------------------
+% Main page
+% ----------------------------------------
+\cvsection{Experience}
+\input{experience/teaching_assistant.tex}
+
+\divider
+
+\input{experience/it_minds.tex}
+
+\divider
+
+\input{experience/scalgo.tex}
+
+\cvsection{Volunteering}
+I have been very active at the university outside of the studies. Below are some
+things I have volunteered for among other things
+
+\medskip
+
+\input{volunteering/tutor.tex}
+
+\divider \newpage
+
+\input{volunteering/fredagscafeen.tex}
+
+\divider
+
+\input{volunteering/regnecentralen.tex}
+
+\end{document}
