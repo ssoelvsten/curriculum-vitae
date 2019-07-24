@@ -1,7 +1,7 @@
 \input{preamble}
 
 \begin{document}
-\input{sections/header.tex}
+\input{header.tex}
 
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 \AtBeginEnvironment{itemize}{\small}
@@ -17,14 +17,38 @@
 % Side bar
 % ----------------------------------------
 \marginpar{
-  \input{sections/skills.tex}
+  % --------------------------------------
+  % Skills
+  % --------------------------------------
+  \cvsection{Skills}
 
+  Interpersonal Skills
+
+  \input{skills/interpersonal.tex}
+
+  \divider \\ Technologies
+
+  \input{skills/technologies.tex}
+
+  \divider \\ Theoretical Computer Science
+
+  \input{skills/computer_science.tex}
+
+  \divider \\ Mathematics
+
+  \input{skills/mathematics.tex}
+  
+  % --------------------------------------
+  % Education
+  % --------------------------------------
 
   \cvsection{Education}
   
   \input{education/au_bsc.tex}
 
-  
+  % --------------------------------------
+  % Languages
+  % --------------------------------------
   \cvsection{Languages}
   
   \input{languages/english.tex}
