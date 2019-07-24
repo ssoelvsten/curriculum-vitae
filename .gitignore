@@ -1,6 +1,5 @@
 # Template files
 fonts/
-*.cls
 
 # LaTeX Output
 *.aux
