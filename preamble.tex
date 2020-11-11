@@ -62,9 +62,16 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% sample.bib contains your publications
+%% Publications
+\DefineBibliographyStrings{english}{%
+  references = {},
+}
+  
 \addbibresource{publications.bib}
 
 %% Links
 \usepackage{url}                 % \url{link}
 \usepackage[hidelinks]{hyperref} % \href{link}{replacing text}
+
+%% Fancy enumeration
+\usepackage{enumitem}

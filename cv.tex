@@ -23,6 +23,17 @@
 % ----------------------------------------
 \marginpar{
   % --------------------------------------
+  % Education
+  % --------------------------------------
+  \cvsection{Education}
+  
+  \input{education/au_bsc.tex}
+
+  \divider
+  
+  \input{education/au_msc.tex}
+
+  % --------------------------------------
   % Skills
   % --------------------------------------
   \cvsection{Skills}
@@ -42,15 +53,47 @@
   \divider \\ Mathematics
 
   \input{skills/mathematics.tex}
-  
-  % --------------------------------------
-  % Education
-  % --------------------------------------
+}
 
-  \cvsection{Education}
-  
-  \input{education/au_bsc.tex}
+% ----------------------------------------
+% Main page
+% ----------------------------------------
+\cvsection{Professional Appointments}
 
+\input{experience/phd.tex}
+
+\divider
+
+\cvsubsection{Industrial Experience}
+
+\input{experience/scalgo.tex}
+
+\medskip
+
+\input{experience/it_minds.tex}
+
+% +----------------------------------------------------------------------------+
+% |                                P A G E   II                                |
+% +----------------------------------------------------------------------------+
+
+\newpage
+\begin{fullwidth}
+  % --------------------------------------
+  % Publications
+  % --------------------------------------
+  \cvsection{Publications}
+  In order of publication (newest to oldest).
+
+  \nocite{*}    % HACK: Cite everything in the bibliography, so Biber fetches
+  \vspace{-2em} % HACK: Hide the space for 'Reference' section title
+
+  \printbibliography
+\end{fullwidth}
+
+% ----------------------------------------
+% Side bar
+% ----------------------------------------
+\marginpar{
   % --------------------------------------
   % Languages
   % --------------------------------------
@@ -65,31 +108,10 @@
   \divider
 
   \input{languages/german.tex}
-}
-
-% ----------------------------------------
-% Main page
-% ----------------------------------------
-\cvsection{Experience}
-\input{experience/teaching_assistant.tex}
-
-\divider
-
-\input{experience/it_minds.tex}
-
-\divider
-
-\input{experience/scalgo.tex}
-
-% +----------------------------------------------------------------------------+
-% |                                P A G E   II                                |
-% +----------------------------------------------------------------------------+
-
-\newpage
-% ----------------------------------------
-% Side bar
-% ----------------------------------------
-\marginpar{
+  
+  % --------------------------------------
+  % References
+  % --------------------------------------
   \cvsection{References}
 
   \input{references/van_de_pol.tex}
@@ -102,20 +124,29 @@
 % ----------------------------------------
 % Main page
 % ----------------------------------------
+
+\cvsection{Teaching}
+\input{experience/teaching_assistant.tex}
+
+\medskip
+
+\input{experience/supervision.tex}
+
+
 \cvsection{Volunteering}
 I have been very active at the university outside of the studies. Below are some
 things I have volunteered for among other things
 
 \medskip
 
+\input{volunteering/regnecentralen.tex}
+
+\divider
+
 \input{volunteering/tutor.tex}
 
 \divider
 
 \input{volunteering/fredagscafeen.tex}
-
-\divider
-
-\input{volunteering/regnecentralen.tex}
 
 \end{document}
