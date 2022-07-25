@@ -3,6 +3,8 @@ fonts/
 
 # LaTeX Output
 *.aux
+*.bak
+*.bbl
 *.log
 *.out
 *.gz

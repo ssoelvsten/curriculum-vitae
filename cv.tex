@@ -12,9 +12,10 @@
 \AtBeginEnvironment{itemize}{\small}
 
 \begin{fullwidth}
-  Ambitious, versatile and hard-working PhD student of computer science and
-  previous full stack developer with a deeper interest for \emph{verification},
-  \emph{algorithms}, \emph{complexity theory}, and \emph{logic and semantics}.
+  Technophobic computer scientist, climber, dancer, psychology and philosophy
+  interested and board game playing hippie. My PhD research is at the intersection
+  between the areas of \emph{formal methods}, \emph{algorithms}, and
+  \emph{complexity theory}.
 \end{fullwidth}
 
 
@@ -58,11 +59,11 @@
 % ----------------------------------------
 % Main page
 % ----------------------------------------
-\cvsection{Professional Appointments}
+\cvsection{Professional Experience}
+
+\cvsubsection{Academic Experience}
 
 \input{experience/phd.tex}
-
-\divider
 
 \cvsubsection{Industrial Experience}
 
@@ -75,20 +76,7 @@
 % +----------------------------------------------------------------------------+
 % |                                P A G E   II                                |
 % +----------------------------------------------------------------------------+
-
 \newpage
-\begin{fullwidth}
-  % --------------------------------------
-  % Publications
-  % --------------------------------------
-  \cvsection{Publications}
-  In order of publication (newest to oldest).
-
-  \nocite{*}    % HACK: Cite everything in the bibliography, so Biber fetches
-  \vspace{-2em} % HACK: Hide the space for 'Reference' section title
-
-  \printbibliography
-\end{fullwidth}
 
 % ----------------------------------------
 % Side bar
@@ -148,5 +136,23 @@ things I have volunteered for among other things
 \divider
 
 \input{volunteering/fredagscafeen.tex}
+
+% +----------------------------------------------------------------------------+
+% |                                P A G E   III                               |
+% +----------------------------------------------------------------------------+
+
+\newpage
+\begin{fullwidth}
+  % --------------------------------------
+  % Publications
+  % --------------------------------------
+  \cvsection{Publications}
+  In order of publication (newest to oldest).
+
+  \nocite{*}    % HACK: Cite everything in the bibliography, so Biber fetches
+  \vspace{-2em} % HACK: Hide the space for 'Reference' section title
+
+  \printbibliography
+\end{fullwidth}
 
 \end{document}
