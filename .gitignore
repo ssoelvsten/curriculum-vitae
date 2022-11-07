@@ -16,4 +16,4 @@ fonts/
 # Emacs
 \.#*
 *.el
-
+.*~undo-tree~
