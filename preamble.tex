@@ -75,3 +75,24 @@
 
 %% Fancy enumeration
 \usepackage{enumitem}
+
+%% Fullwidth tables
+\usepackage{tabularx}
+
+%%%%%%%%%%%%%%%%%
+% Additional AltaCV macros
+%%%%%%%%%%%%%%%%%
+
+\newcommand{\cvitemevent}[3]{
+  \smallskip
+  
+\item \textbf{\color{accent}#1}
+
+  \smallskip
+
+  \hspace{-6pt}\begin{tabularx}{0.98\textwidth}[b]{XX}
+    \faCalendar\ #2 & \faMapMarker\ #3
+  \end{tabularx}
+  
+  \medskip
+}
