@@ -119,13 +119,15 @@
 
 \input{experience/supervision.tex}
 
-\cvsection{International Activities}
+\begin{fullwidth}
+  \cvsection{International Activities}
+\end{fullwidth}
 
-\cvsubsection{Talks at International Events}
+\marginpar{
+  \cvsubsection{Talks at International Events}
 
-\input{international/talks.tex}
-
-\medskip
+  \input{international/talks.tex}
+}
 
 \cvsubsection{Research Visits}
 
@@ -170,11 +172,20 @@
   % Publications
   % --------------------------------------
   \cvsection{Publications}
-  In order of publication (newest to oldest).
+
+  \cvsubsection{Conference Proceedings}
+
+  Unlike many other areas of research, computer scientists primarily publish their research results
+  in \emph{conference proceedings} rather than \emph{journals}. This is not at the cost of quality
+  of the research since these publications are thoroughly peer reviewed. Similar to journals,
+  conferences are \href{https://portal.core.edu.au/conf-ranks/}{\emph{ranked}}, e.g.\ our
+  publication at \emph{TACAS} [\ref{cite:2022.tacas}] is at an \emph{A}-tier conferences.
+
+  \medskip
 
   \divider
 
-  \cvsubsection{Published}
+  % \cvsubsection{Published}
 
   \begin{enumerate} \normalsize
   \item \input{cite/2024.spin.tex} \divider
@@ -183,16 +194,6 @@
   \item \input{cite/2022.tacas.tex} \divider
   \item \input{cite/2020.mfcs.tex}
   \end{enumerate}
-
-  \iffalse
-  \divider
-
-  \cvsubsection{In Submission}
-
-  \begin{itemize} \normalsize
-  \item \input{cite/?.tex} \divider
-  \end{itemize}
-  \fi
 \end{fullwidth}
 
 \end{document}
