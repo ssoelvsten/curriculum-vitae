@@ -53,6 +53,21 @@
   \divider \\ Mathematics
 
   \input{skills/mathematics.tex}
+
+  % --------------------------------------
+  % Languages
+  % --------------------------------------
+  \cvsection{Languages}
+
+  \input{languages/english.tex}
+
+  \divider
+
+  \input{languages/danish.tex}
+
+  \divider
+
+  \input{languages/german.tex}
 }
 
 % ----------------------------------------
@@ -61,6 +76,8 @@
 \cvsection{Professional Experience}
 
 \cvsubsection{Academic Experience}
+
+\input{experience/postdoc.tex}
 
 \input{experience/phd.tex}
 
@@ -81,20 +98,6 @@
 % Side bar
 % ----------------------------------------
 \marginpar{
-  % --------------------------------------
-  % Languages
-  % --------------------------------------
-  \cvsection{Languages}
-
-  \input{languages/english.tex}
-
-  \divider
-
-  \input{languages/danish.tex}
-
-  \divider
-
-  \input{languages/german.tex}
 
   % --------------------------------------
   % References
@@ -102,6 +105,10 @@
   \cvsection{References}
 
   \input{references/van_de_pol.tex}
+
+  \divider
+
+  \input{references/askarov.tex}
 
   \divider
 
@@ -173,6 +180,10 @@
   % --------------------------------------
   \cvsection{Publications}
 
+  \begin{enumerate} \normalsize
+  \item \input{cite/2025.thesis.tex}
+  \end{enumerate}
+
   \cvsubsection{Conference Proceedings}
 
   Unlike many other areas of research, computer scientists primarily publish their research results
@@ -185,14 +196,18 @@
 
   \divider
 
-  % \cvsubsection{Published}
-
-  \begin{enumerate} \normalsize
+  \begin{enumerate} \normalsize \setcounter{enumi}{1}
   \item \input{cite/2024.spin.tex} \divider
   \item \input{cite/2023.atva.tex} \divider
   \item \input{cite/2023.nfm.tex} \divider
   \item \input{cite/2022.tacas.tex} \divider
   \item \input{cite/2020.mfcs.tex}
+  \end{enumerate}
+
+  \cvsubsection{Preprints}
+  \begin{enumerate} \normalsize \setcounter{enumi}{6}
+  \item \input{cite/2025.arxiv.tex} \divider
+  \item \input{cite/2024.arxiv.tex}
   \end{enumerate}
 \end{fullwidth}
 
