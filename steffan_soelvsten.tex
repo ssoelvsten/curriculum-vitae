@@ -17,17 +17,13 @@
   game playing hippie.
 \end{fullwidth}
 
-
 % ----------------------------------------
 % Side bar
 % ----------------------------------------
 \marginpar{
-  % --------------------------------------
-  % Education
-  % --------------------------------------
   \cvsection{Education}
 
-  \input{education/au_bsc.tex}
+  \input{education/au_phd.tex}
 
   \divider
 
@@ -35,48 +31,23 @@
 
   \divider
 
-  \input{education/au_phd.tex}
-
-  % --------------------------------------
-  % Skills
-  % --------------------------------------
-  \cvsection{Skills}
-
-  Interpersonal Skills
-
-  \input{skills/interpersonal.tex}
-
-  \divider \\ Technologies
-
-  \input{skills/technologies.tex}
-
-  \divider \\ Theoretical Computer Science
-
-  \input{skills/computer_science.tex}
-
-  \divider \\ Mathematics
-
-  \input{skills/mathematics.tex}
+  \input{education/au_bsc.tex}
 }
 
 % ----------------------------------------
 % Main page
 % ----------------------------------------
-\cvsection{Professional Experience}
+\cvsection{Technical Experience}
 
-\cvsubsection{Academic Experience}
+\input{experience.technical/scalgo.tex}
 
-\input{experience/au.postdoc.tex}
+\divider
 
-\input{experience/au.phd.tex}
+\input{experience.technical/au.postdoc.tex}
 
-\cvsubsection{Industry Experience}
+\divider
 
-\input{experience/scalgo.tex}
-
-\medskip
-
-\input{experience/it_minds.tex}
+\input{experience.technical/au.phd.tex}
 
 % +----------------------------------------------------------------------------+
 % |                                P A G E   II                                |
@@ -84,7 +55,7 @@
 \newpage
 
 % ----------------------------------------
-% Side bar
+% Side bar (Languages)
 % ----------------------------------------
 \marginpar{
   % --------------------------------------
@@ -101,6 +72,41 @@
   \divider
 
   \input{languages/german.tex}
+}
+
+\input{experience.technical/it_minds.tex}
+
+% ----------------------------------------
+% Side bar (Reviews)
+% ----------------------------------------
+\marginpar{
+  \vspace{48pt}
+
+  \input{experience.managerial/reviews.tex}
+}
+
+\begin{fullwidth}
+  \cvsection{Managerial Experience}
+\end{fullwidth}
+
+\input{experience.managerial/supervision.tex}
+
+\divider
+
+\input{experience.managerial/it_minds.tex}
+
+% +----------------------------------------------------------------------------+
+% |                                P A G E   II                                |
+% +----------------------------------------------------------------------------+
+\newpage
+
+% ----------------------------------------
+% Side bar
+% ----------------------------------------
+\marginpar{
+  \cvsection{Public Speaking}
+
+  \input{experience.dissemination/talks.tex}
 
   % --------------------------------------
   % References
@@ -117,68 +123,51 @@
 % ----------------------------------------
 % Main page
 % ----------------------------------------
+\cvsection{Teaching Experience}
 
-\cvsection{Teaching}
-\input{experience/teaching_assistant.tex}
+\input{experience.dissemination/teaching_assistant.tex}
 
-\medskip
+\divider
 
-\input{experience/supervision.tex}
+\input{experience.dissemination/vuc.tex}
 
-\vspace{20pt}
+\divider
+
+\input{experience.dissemination/10ende.tex}
+
 \begin{fullwidth}
-  \cvsection{International Activities}
+  \cvsection{Other Experience}
 \end{fullwidth}
 
 \marginpar{
-  \cvsubsection{Talks at International Events}
-
-  \input{international/talks.tex}
-}
-
-\cvsubsection{Research Visits}
-
-\input{international/research_visits.tex}
-
-% +----------------------------------------------------------------------------+
-% |                                P A G E   III                               |
-% +----------------------------------------------------------------------------+
-
-\newpage
-\marginpar{
-  % --------------------------------------
-  % Extracurricular Activities
-  % --------------------------------------
-  \cvsection{Extracurricular}
-
-  \input{volunteering/regnecentralen.tex}
+  \input{experience.other/teknik.tex}
 
   \divider
 
-  \input{volunteering/teknik.tex}
+  \input{experience.other/tutor.tex}
 }
 
-  % --------------------------------------
-  % Academic Duties
-  % --------------------------------------
-  \cvsection{Academic Duties}
+\input{experience.other/regnecentralen.tex}
 
-  \input{experience/reviews.tex}
+\divider
 
-  % --------------------------------------
-  % Grants
-  % --------------------------------------
-  \cvsection{Grants}
+\input{experience.other/dsau.tex}
 
-  \begin{itemize}
-  \item \input{grants/stibo.cmu.tex}
-  \end{itemize}
+\divider
 
+\input{experience.other/fredagscafeen.tex}
+
+% +----------------------------------------------------------------------------+
+% |                                P A G E   IV                                |
+% +----------------------------------------------------------------------------+
+\newpage
 \begin{fullwidth}
   % --------------------------------------
   % Publications
   % --------------------------------------
   \cvsection{Publications}
+
+  \cvsubsection{PhD Thesis}
 
   \begin{enumerate} \normalsize
   \item \input{cite/2025.thesis.tex}
@@ -193,8 +182,6 @@
   publication at \emph{TACAS} [\ref{cite:2022.tacas}] is at an \emph{A}-tier conferences.
 
   \medskip
-
-  \divider
 
   \begin{enumerate} \normalsize \setcounter{enumi}{1}
   \item \input{cite/2026.vmcai.tex} \divider
